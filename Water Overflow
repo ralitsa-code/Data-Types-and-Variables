@@ -1,0 +1,13 @@
+number_lines = int(input())
+capacity_tank = 255
+liters_in_the_tank = 0
+
+for liters in range(number_lines):
+    current_liters = int(input())
+    if current_liters > capacity_tank:
+        print("Insufficient capacity!")
+        continue
+    liters_in_the_tank += current_liters
+    capacity_tank -= current_liters
+print(liters_in_the_tank)
+
