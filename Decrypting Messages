@@ -1,0 +1,7 @@
+key = int(input())
+lines = int(input())
+
+for letters in range(lines):
+    current_letter = input()
+    decrypted_letter = chr(ord(current_letter) + key)
+    print(decrypted_letter, end="")
