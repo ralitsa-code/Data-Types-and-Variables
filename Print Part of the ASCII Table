@@ -1,0 +1,8 @@
+first_number = int(input())
+last_number = int(input())
+
+for number in range(first_number, last_number + 1):
+    if number == last_number:
+        print(chr(number))
+    else:
+        print(chr(number), end=" ")
