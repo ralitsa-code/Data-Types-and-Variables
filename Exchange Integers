@@ -1,0 +1,8 @@
+a = int(input())
+b = int(input())
+
+temporary_a = a
+a = b
+b = temporary_a
+
+print(f"Before:\na = {b}\nb = {a}\nAfter:\na = {a}\nb = {b}")
