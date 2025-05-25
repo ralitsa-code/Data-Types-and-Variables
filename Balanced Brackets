@@ -1,0 +1,27 @@
+lines = int(input())
+brackets_are_closed = True
+expression = " "
+
+for line in range(lines):
+    line = input()
+    if line == ")" and brackets_are_closed:
+        expression = "UNBALANCED"
+        break
+    if line == "(" and brackets_are_closed:
+        expression = "BALANCED"
+        brackets_are_closed = False
+        continue
+    if line == ")" and not brackets_are_closed:
+        expression = "BALANCED"
+        brackets_are_closed = True
+        continue
+    if line == "(" and not brackets_are_closed:
+        expression = "UNBALANCED"
+        break
+    if brackets_are_closed == False:
+        expression = "UNBALANCED"
+        continue
+    else:
+        continue
+
+print(expression)
